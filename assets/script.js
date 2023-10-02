@@ -12,15 +12,3 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); 
 }
-
-
-var navToggle = $("#navToggle");
-var carouselText =$(".carouselText");
-
-navToggle.on("click",function(){
-    if(carouselText.hasClass("carouselTextPosition")===true){
-        carouselText.removeClass("carouselTextPosition")
-    } else { 
-        carouselText.addClass("carouselTextPosition");
-    }
-});
